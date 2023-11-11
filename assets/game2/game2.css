@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(79, 80, 80);
+}
+#msg {
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  font-size: 3em;
+  color: white;
+  background-color: #4f5050;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+#game-board {
+  display: grid;
+}
+
+.wallBeige1 {
+  background-image: url(./extraIcon/wallBeige1.png);
+}
+.wallBeige2 {
+  background-image: url(./extraIcon/wallBeige2.png);
+}
+.wallGray1 {
+  background-image: url(./extraIcon/wallGray1.png);
+}
+.wallGray2 {
+  background-image: url(./extraIcon/wallGray2.png);
+}
+.wallGray3 {
+  background-image: url(./extraIcon/wallGray3.png);
+}
+.edgeTopRight {
+  background-image: url(./extraIcon/edgeRight.png);
+}
+.edgeTopMiddle {
+  background-image: url(./extraIcon/edgeTopMiddle.png);
+}
+.edgeTopLeft {
+  background-image: url(./extraIcon/edgeTopLeft.png);
+}
+.edgeRight {
+  background-image: url(./extraIcon/edgeRight.png);
+}
+.edgeMiddle {
+  background-image: url(./extraIcon/edgeMiddle.png);
+}
+.edgeLeft {
+  background-image: url(./extraIcon/edgeLeft.png);
+}
+
+.grass3 {
+  background-image: url(./extraIcon/grass3.png);
+}
+.ski {
+  background-color: rgb(109, 207, 245);
+}
+.door {
+  background-image: url(./extraIcon/door.png);
+}
+.window2 {
+  background-image: url(./extraIcon/window2.png);
+}
+.water {
+  background-image: url(./extraIcon/water.png);
+}
+.waves {
+  background-image: url(./extraIcon/waves.png);
+}
+.fire {
+  background-image: url(./extraIcon/fire.png);
+}
+.coal {
+  background-image: url(./extraIcon/coal.png);
+}
+.smoke {
+  background-image: url(./extraIcon/smoke.png);
+}
+.smoke2 {
+  background-image: url(./extraIcon/smoke2.png);
+}
+.box {
+  background-image: url(./extraIcon/box.png);
+}
+
+.tree {
+  background-image: url(./extraIcon/tree-leaves.png);
+}
+.wood {
+  background-image: url(./extraIcon/tree.png);
+}
+.axe {
+  background-image: url(./extraIcon/axe.png);
+}
+.shovel {
+  background-image: url(./extraIcon/shovel.png);
+}
+.pickaxe {
+  background-image: url(./extraIcon/pickaxe.png);
+}
+.bucket{
+    background-image: url(./extraIcon/bucket.webp);   
+}
+
+.box,
+.smoke,
+.smoke2,
+.coal,
+.fire,
+.wallBeige1,
+.wallBeige2,
+.wallGray1,
+.wallGray2,
+.wallGray3,
+.edgeTopRight,
+.edgeTopMiddle,
+.edgeTopLeft,
+.edgeRight,
+.edgeMiddle,
+.edgeLeft,
+.grass3,
+.ski,
+.door,
+.window2,
+.water,
+.waves,
+.wood,
+.tree,
+.bucket,
+.axe,
+.pickaxe,
+.shovel {
+  background-size: cover;
+  width: 40px;
+  height: 42px;
+}
+
+#obj-counter {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* game tools */
+#game-tools{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 2%;
+    left: 40%;
+    z-index: 100px;
+}
+.hidden{
+    display: none;
+}
+.remover-tools,
+.counter-objects {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: dimgray;
+}
+.remover-tools,
+.counter-objects {
+  border-radius: 10px;
+}
+.remover-tools section,
+.counter-objects section {
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+/* Hover styling */
+.counter-objects .grass:hover,
+.counter-objects .wood:hover,
+.counter-objects .tree:hover,
+.counter-objects .rock:hover,
+.counter-objects .ground:hover,
+.counter-objects .axe:hover,
+.counter-objects .pickaxe:hover,
+.counter-objects .shovel:hover,
+.remover-tools section:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+/* reset button */
+.reset-btn {
+  padding: 10px;
+  margin: 10px;
+  font-size: 2rem;
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reset-btn,
+.remover-tools,
+.counter-objects {
+  box-shadow: 2px 2px 1px gray;
+}

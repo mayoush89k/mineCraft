@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+  margin: auto;
+  background-color: rgb(79, 80, 80);
+}
+#msg{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    font-size: 3em;
+    color: white;
+    background-color: rgb(79, 80, 80);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+#game-board {
+  width: 55vw;
+  height: 85vh;
+  display: grid;
+}
+
+/* game objects */
+.grass {
+  background-image: url(./icons/grass.png);
+}
+.tree {
+  background-image: url(./icons/tree-leaves.png);
+}
+.wood {
+  background-image: url(./icons/tree.png);
+}
+.rock {
+  background-image: url(./icons/rock.png);
+}
+.cloud {
+  background-image: url(./icons/cloud.png);
+}
+.ground {
+  background-image: url(./icons/ground.jpg);
+}
+.ski {
+  background-color: skyblue;
+}
+.grass,
+.wood,
+.tree,
+.rock,
+.ground,
+.axe,
+.pickaxe,
+.shovel {
+  background-size: cover;
+  width: 40px;
+  height: 42px;
+}
+
+#grass-counter, #wood-counter, #rock-counter, #tree-counter, #ground-counter{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* game tools */
+#game-tools,
+.remover-tools,
+.counter-objects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.remover-tools,
+.counter-objects {
+  background-color: rgb(62, 71, 71);
+  border-radius: 10px;
+}
+.remover-tools section,
+.counter-objects section {
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.axe {
+  background-image: url(./icons/axe.png);
+}
+.shovel {
+  background-image: url(./icons/shovel.png);
+}
+.pickaxe {
+  background-image: url(./icons/pickaxe.png);
+}
+
+/* Hover styling */
+.counter-objects .grass:hover,
+.counter-objects .wood:hover,
+.counter-objects .tree:hover,
+.counter-objects .rock:hover,
+.counter-objects .ground:hover,
+.counter-objects .axe:hover,
+.counter-objects .pickaxe:hover,
+.counter-objects .shovel:hover ,
+.remover-tools section:hover{
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+/* reset button */
+.reset-btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.reset-btn , .remover-tools , .counter-objects{
+    box-shadow: 2px 2px 1px gray
+}
+
+/* ! pointer icon changeable */
+.shovel-pointer{}
+.axe-pointer{}
+.pickaxe-pointer{}
+
+/* upgrade btn */
+#upgrade{
+    position: absolute;
+    top: 650px;
+    left: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    background-color: red;
+    border-radius: 10px;
+}
