@@ -7,8 +7,6 @@ gameBoard.style.gridTemplateRows = `repeat(${rowNumber},30px)`;
 const object = {
   wood: { name: "wood", counter: 0 },
   box: { name: "box", counter: 0 },
-  smoke: { name: "smoke", counter: 0 },
-  smoke2: { name: "smoke2", counter: 0 },
   coal: { name: "coal", counter: 0 },
   fire: { name: "fire", counter: 0 },
   wallBeige1: { name: "wallBeige1", counter: 0 },
@@ -330,7 +328,7 @@ gameTools.addEventListener("click", (e) => {
   }
 });
 
-// add listener to gameboard
+// add listener to gameBoard
 gameBoard.addEventListener("click", (e) => {
   if (e.target.className != "ski" && e.target.className != "smoke" && e.target.className != "smoke2") {
     currentObj = "";
@@ -372,5 +370,7 @@ gameBoard.addEventListener("click", (e) => {
 
       document.getElementById(`${e.target.className}-counter`).innerText = object[e.target.className].counter;
     } else setMsg("Choose Valid Object");
-  }
+  } else if (e.target.className == "smoke" || e.target.className == "smoke2") {
+    setMsg("Cannot remove smoke")
+}
 });
