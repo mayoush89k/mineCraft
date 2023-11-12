@@ -245,6 +245,6 @@ gameBoard.addEventListener("click", (e) => {
 
 const upgrade = document.getElementById("upgrade")
 upgrade.addEventListener('click' , () => {
-    window.location = '/game2/game2.html'
+    window.location = '/assets/game2/game2.html'
     
 })
