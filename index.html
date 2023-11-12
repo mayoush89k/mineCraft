@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2D Mine Craft</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <section id="game-board"></section>
-    <section id="game-tools"></section>
-
-    <section id="upgrade">Upgrade</section>
-    <section id="msg" style="display: none;"></section>
-    <script src="./assets/script.js"></script>
-</body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        max-width: 55%;
+        margin: auto;
+        background-color: rgb(79, 80, 80);
+      }
+      #starting {
+        position: relative;
+      }
+      #start-game{
+        position: absolute;
+        bottom: 10vw;
+        left: 33%;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="starting">
+      <img
+        src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/Minecraft_Vertical-Key-Art.jpg"
+        width="800px"
+        height="750px"
+        alt=""
+      />
+      <button id="start-game">Start Game</button>
+    </section>
+    <script>
+      document.getElementById("start-game").addEventListener("click", () => {
+        window.location = "/weekend%20assignment/miniCraft/assets/game1.html";
+      });
+    </script>
+  </body>
 </html>
