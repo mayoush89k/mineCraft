@@ -6,17 +6,6 @@ body {
   background-color: rgb(79, 80, 80);
 }
 
-.hidden{
-  display: none;
-}
-#starting{
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  position: relative;
-  background-color: rgb(79,80,80);
- }
-
 #msg{
     position: absolute;
     top: 150px;
@@ -149,4 +138,5 @@ body {
     font-size: 2rem;
     background-color: red;
     border-radius: 10px;
+    cursor: pointer;
 }
