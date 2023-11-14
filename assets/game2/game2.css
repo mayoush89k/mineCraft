@@ -135,8 +135,8 @@ body {
 .pickaxe,
 .shovel {
   background-size: cover;
-  width: 40px;
-  height: 42px;
+  width: 30px;
+  height: 32px;
 }
 
 #obj-counter {
